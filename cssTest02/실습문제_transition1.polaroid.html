@@ -19,6 +19,8 @@
       text-align: center;
       position: relative;
 
+      overflow: hidden;
+
       transition: transform;
       transition-duration: 0.5s;
       transition-property: inherit;
@@ -29,9 +31,8 @@
     }
 
     .rotate > .caption {
-      overflow: hidden;
-      width: 0px;
-      height: 20px;
+      width: 200px;
+      height: 15px;
       position: relative;
       text-align: left;
       margin-top: 3px;
@@ -45,6 +46,7 @@
       background-color: rgb(211, 205, 205);
     }
     .rotate:hover .caption {
+      
       animation-name: my-keyframe;
       animation-duration: 0.5s;
       animation-fill-mode: forwards;
