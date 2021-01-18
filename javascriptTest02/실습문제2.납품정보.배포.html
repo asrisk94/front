@@ -64,14 +64,16 @@
 
 		function printProduct() {
 
-			var check = alert("출력하시겠습니까?");
-			
-			if(confirm(check)) {
+			var check = confirm("출력하시겠습니까?");
+			var productName = document.getElementById("productName");
+			console.log(productName.value);
+
+			if(check) {
 				var result = document.querySelector("div#result");
 
 				var productName = document.getElementById("productName");
 				var pAmount = document.getElementById("productAmount");
-				var pLevel = document.getElementById("pVal");
+				var pLevel = document.getElementById("productLevel");
 				var message = document.getElementById("message");
 				
 				result.innerHTML = "상품명 : " + productName.value + "<br>";
